@@ -1,0 +1,53 @@
+table,
+tr th,
+td {
+    border: 1px solid #868585;
+}
+
+table,
+tr,
+th {
+    background-color: #2697FF;
+}
+
+.container {
+    margin: 38px 5px 19px 48px;
+}
+
+.col {
+    text-align: center;
+    justify-content: center;
+}
+
+#Des-detail {
+    width: 350px;
+    height: 400px;
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-table;
+    -webkit-box-orient: inline-axis;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 10px;
+}
+
+table tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+table tr:nth-child(even) {
+    background-color: white;
+}
+
+table tr:nth-child(1) {
+    background-color: skyblue;
+}
+
+
+/* #img-timeline {
+    width: 100%;
+} */

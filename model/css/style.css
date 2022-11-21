@@ -1,0 +1,362 @@
+:root {
+    --bg-cl: #eef8ff;
+    --box-w: 300px;
+    --max-w: 1300px;
+    /* --bg-text: rgba(11, 109, 43, 0.5);
+     */
+    --bg: #ffff;
+    --bg--highlight--project: #f1f1f1;
+    --text-h: 20px;
+    --base-cl: #FFCD00;
+    --bg-text: var(--bg-cl);
+    --font-family: "Open Sans", sans-serif;
+}
+
+
+/* slider */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font-family);
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container-pr {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    position: relative;
+    font-size: var(--text-h);
+}
+
+.container-slider {
+    max-width: 100%;
+}
+
+.page-container-slider,
+.container-slider,
+.name-project,
+.name-project h2,
+.name-project img {
+    background-color: #fff;
+    /* background-color: #000; */
+}
+
+.box-slider {
+    width: var(--box-w);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px;
+}
+
+.slide-img {
+    height: 100%;
+}
+
+.slide-img img {
+    height: 260px;
+    object-fit: cover;
+    width: 100%;
+    transition: all 1s;
+    filter: brightness(80%);
+}
+
+.slide-img:hover img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.detail-box {
+    position: absolute;
+    bottom: 0px;
+    height: 60px;
+    width: 100%;
+    background-color: rgba(255, 205, 0, 0.8);
+    font-size: large;
+    color: var(--bg-cl);
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
+/* banner */
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+
+/* ẩn hình ảnh cho phần tử slideshow */
+
+.mySlides {
+    display: none;
+}
+
+
+/* thiết kế nút mũi tên*/
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* thiết kế nút mũi tên next nằm phía bên phải */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* hiệu ứng thay đổi background khi hover vào nút mũi tên*/
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Thiết lập style cho nội dung của mỗi phần tử slideshow */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background-color: var(--bg-text);
+}
+
+
+/* Thiết lập style cho số hiển thị của phần tử */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.name-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.name-project img {
+    max-width: 200px;
+}
+
+
+/* button */
+
+.detail-title {
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.btn-root {
+    --c: var(--base-cl);
+    color: rgb(203, 187, 16);
+    font-size: 16px;
+    border: 3.6px solid var(--c);
+    border-radius: 0.5em;
+    padding: 0px 10px;
+    font-family: var(--font-family);
+    letter-spacing: 0.1em;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 10px 0px;
+}
+
+.btn-root span {
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    transition: 1s;
+    z-index: -1;
+}
+
+.btn-root:hover {
+    color: black;
+}
+
+.btn-root:hover span {
+    transform: translateY(0) scale(2);
+}
+
+.page-container-slider {
+    max-width: 90%;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .page-container-slider {
+        width: 95%;
+    }
+}
+
+.container-pr .container-slider {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+
+/* css for btn go to top */
+
+#button {
+    display: inline-block;
+    background-color: #ff9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    display: inline-block;
+    background-color: var(--yellow-color);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#button::after {
+    content: "\2191";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #ffc107;
+}
+
+#button:active {
+    background-color: rgb(19, 18, 18);
+}
+
+#button.show-btn {
+    opacity: 1;
+    visibility: visible;
+    background-color: #ffc107;
+}
+
+
+/* btn see more */
+
+.btn-area {
+    margin-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-area span {
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    transition: 1s;
+    z-index: -1;
+}
+
+@media (min-width: 500px) {
+    #button {
+        margin: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container-pr .container-slider {
+        max-width: 85%;
+    }
+    /* .see-more {
+        font-size: 0.7em;
+        padding: 5px 10px;
+    } */
+}
+
+
+/*  */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.filter {
+    background-color: rgb(253, 250, 250);
+}
+
+.select_option {
+    padding: 10px;
+    text-align: center;
+}
+
+.select_option select {
+    width: auto;
+    height: 30px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.select_option input[type=text] {
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+}

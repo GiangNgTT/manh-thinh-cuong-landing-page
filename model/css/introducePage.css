@@ -1,0 +1,329 @@
+#container {
+    font-family: "Open Sans", sans-serif;
+    line-height: 2rem;
+    width: 100%;
+}
+
+#container #img-intr {
+    height: 200px;
+    object-fit: cover;
+}
+
+.centered {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.intr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.intr img {
+    height: auto;
+    width: 20%;
+}
+
+.intr .text-intr p {
+    text-align: justify;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.content-row-large {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.cont-layout {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap: 5%;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-bottom: 8%;
+}
+
+.col-item {
+    height: auto;
+}
+
+.col-item .icon-img .icon-t {
+    width: 60px;
+    margin-bottom: -15%;
+}
+
+.col-item .icon-img #icon-s {
+    width: 42px;
+}
+
+.text-item {
+    margin-left: 15%;
+    float: right;
+}
+
+.text-item>.text-content>li {
+    line-height: 30px;
+}
+
+.title-text {
+    font-weight: bolder;
+    font-size: 1.4rem;
+    margin-left: -70%;
+}
+
+
+/* --------------------------------------------reponsive------------------------------------------- */
+
+@media only screen and (max-width: 400px) {
+    /* -------------intro- */
+    #container {
+        font-family: "Open Sans", sans-serif;
+        line-height: 2.0rem;
+        font-size: small;
+    }
+    #container #img-intr {
+        height: 150px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .centered {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+    .intr img {
+        height: auto;
+        width: 48%;
+    }
+    .intr .text-intr p {
+        text-align: justify;
+        width: 70%;
+        margin-left: 17%;
+    }
+    /* ------- gia trị-*/
+    .content-row-large {
+        width: 85%;
+    }
+    .cont-layout {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .icon-img img {
+        display: none;
+    }
+    .col-item {
+        height: 80%;
+    }
+    .text-item {
+        font-size: small;
+        text-align: justify;
+    }
+}
+
+@media only screen and (min-width: 420px) and (max-width:600px) {
+    /* -------------intro- */
+    #container {
+        font-family: "Open Sans", sans-serif;
+        line-height: 2.0rem;
+        font-size: small;
+    }
+    #container #img-intr {
+        height: 150px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .centered {
+        position: absolute;
+        top: 28%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+    .intr {
+        margin-top: 30%;
+        padding-left: -5%;
+        padding-right: 4%;
+    }
+    .intr img {
+        margin-top: -8%;
+        margin-left: 30%;
+        height: auto;
+        width: 48%;
+    }
+    .intr .text-intr p {
+        text-align: justify;
+        width: 76%;
+        margin: 0 auto;
+    }
+    /* ------- gia trị-*/
+    .content-row-large {
+        width: 85%;
+        margin-top: -15%;
+    }
+    .cont-layout {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .icon-img img {
+        display: none;
+    }
+    .col-item {
+        height: 80%;
+    }
+    .text-item {
+        font-size: small;
+        text-align: justify;
+    }
+}
+
+@media only screen and (min-width: 620px) and (max-width:800px) {
+    /* -------------intro- */
+    #container {
+        font-family: "Open Sans", sans-serif;
+        line-height: 2.0rem;
+        font-size: small;
+    }
+    #container #img-intr {
+        height: 232px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .centered {
+        position: absolute;
+        top: 34%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+    .intr {
+        margin-top: 15%;
+        padding-left: -5%;
+        padding-right: 4%;
+    }
+    .intr img {
+        margin-left: 34%;
+        width: 34%;
+    }
+    .intr .text-intr p {
+        text-align: justify;
+        width: 74%;
+        margin-left: 14%;
+    }
+    .content-row-large {
+        width: 84%;
+        margin-top: -10%;
+    }
+    .cont-layout {
+        display: grid;
+        grid-template-columns: 52% 52%;
+        column-gap: 2%;
+        width: 84%;
+        margin-left: 12%;
+        margin-right: 10%;
+    }
+    .icon-img img {
+        display: none;
+    }
+    .col-item {
+        height: 84%;
+    }
+    .text-item {
+        font-size: small;
+        text-align: justify;
+    }
+    #text-tl {
+        margin-left: -67%;
+    }
+    #text-s {
+        margin-left: -70%;
+    }
+    #text-g {
+        margin-left: -76%;
+    }
+}
+
+
+/* --- */
+
+@media only screen and (min-width:800px) and (max-width: 1024px) {
+    #container {
+        font-family: "Open Sans", sans-serif;
+        line-height: 2.0rem;
+        font-size: small;
+    }
+    #container #img-intr {
+        height: 232px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .centered {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+    .intr img {
+        width: 34%;
+    }
+    .intr .text-intr p {
+        text-align: justify;
+        width: 74%;
+        margin-left: 15%;
+    }
+    .content-row-large {
+        width: 84%;
+    }
+    .cont-layout {
+        display: grid;
+        grid-template-columns: 52% 52%;
+        column-gap: 2%;
+        width: 84%;
+        margin-left: 12%;
+        margin-right: 10%;
+    }
+    .icon-img img {
+        display: none;
+    }
+    .col-item {
+        height: 84%;
+    }
+    .text-item {
+        font-size: small;
+        text-align: justify;
+    }
+    #text-tl {
+        margin-left: -67%;
+    }
+    #text-s {
+        margin-left: -70%;
+    }
+    #text-g {
+        margin-left: -76%;
+    }
+}
